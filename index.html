@@ -1,277 +1,779 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Website</title>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Genesys"/>
+    <meta name="keywords" content="Work,Business,Technology, E-commerce,"/>
+    <meta name="description" content="An E-commerce Website"/>
+    <title>HIVEMART</title>
+    <!-- External CSS file link -->
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div  class="container">
-    <div class="categories">
-    <div class="section1">
-        <div class="row1">
-        <a href="http://127.0.0.1:5500/second.html">
-            <img src="Images/section1/Phones & Tablets.png" alt="phones&tablets">
-            Phones & Tablets
-        </a>
+    <!-- online icons from  www.fontawesome.com-->
+    <script src="https://kit.fontawesome.com/7d43ec513a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- landing page -->
+    <main>
+      <!-- header -->
+      <div class="nav">
+        <!-- logo div -->
+        <div class="logo">
+          <img src="./IMAGES/logo.png" alt="HiveMart Logo"/>
         </div>
-        <div class="row1">
-        <a href="http://127.0.0.1:5500/third.html">
-            <img src="Images/section1/Fashon.png" alt="Fashon">
-            Fashon
-        </a>
+        <!-- end of logo div -->
+        <!-- navbar -->
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="#" id="active">home</a>
+            </li>
+            <li>
+              <a href="#">products</a>
+            </li>
+            <li>
+              <a href="#">top deals</a>
+            </li>
+            <li>
+              <a href="#">support</a>
+            </li>
+            <li>
+              <a href="#">refer & discount</a>
+            </li>
+          </ul>
         </div>
-        <div class="row1">
-            <a href="">
-            <img src="Images/section1/Groceries.png" alt="Groceries">
-            Groceries
-        </a>
+        <!-- end of navbar -->
+        <!-- header search button -->
+        <div class="search">
+          <input type="search" placeholder="search hivemart products" name="search"/>
+          <a href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+          </a>
         </div>
-        <div class="row1">
-            <a href="">
-            <img src="Images/section1/Fitness Accessories.png" alt="Fitness">
-            Fitness Accessories
-        </a>
+        <input type="checkbox" id="check"/>
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <!-- end of header search button -->
+      </div>
+      <!-- header info -->
+      <div class="header_info">
+        <span>Free Shipping over 15,000 in Lagos & Abuja</span>
+        <span>Sell On Hivemart</span>
+        <span>1 year Warranty</span>
+      </div>
+      <!-- end of header info -->
+      <!-- header_categories -->
+      <div class="header_categories">
+        <div class="all_categories">
+          <span>All Categories</span>
+          <input type="checkbox" class="toggle_categories" id="toggle_categories"/>
+          <label for="toggle_categories" class="toggle_icon">
+            <div class="bar-top"></div>
+            <div class="bar-center"></div>
+            <div class="bar-bottom"></div>
+          </label>
+          <div class="sidebar">
+            <ul class="menu_list">
+              <li>
+                <a href="#">groceries</a>
+              </li>
+              <li>
+                <a href="#">fashion</a>
+              </li>
+              <li>
+                <a href="#">phones & tablets</a>
+              </li>
+              <li>
+                <a href="#">home & kitchen</a>
+              </li>
+              <li>
+                <a href="#">appliances</a>
+              </li>
+              <li>
+                <a href="#">health & beauty</a>
+              </li>
+              <li>
+                <a href="#">baby products</a>
+              </li>
+              <li>
+                <a href="#">electronics</a>
+              </li>
+              <li>
+                <a href="#">other categories</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="row1">
-            <a href="">
-            <img src="Images/section1/Electronics.png" alt="Electronics">
-           Electronics
-        </a>
+        <div class="menu_items" id="navbar">
+          <ul>
+            <li>
+              <a href="#">groceries</a>
+            </li>
+            <li>
+              <a href="#">fashion</a>
+            </li>
+            <li>
+              <a href="#">phones & tablets</a>
+            </li>
+            <li>
+              <a href="#">home & kitchen</a>
+            </li>
+            <li>
+              <a href="#">appliances</a>
+            </li>
+            <li>
+              <a href="#">health & beauty</a>
+            </li>
+          </ul>
         </div>
-    </div>
-    </div>
-
-    <div class="categories">
-    <div class="section2">
-        <div class="row2">
-            <a href="">
-            <img src="Images/section2/Mobile Accessories.png" alt="">
-           Mobile Accessories
-        </a>
+      </div>
+      <!-- end of header_categories -->
+      <!-- end of header -->
+      <!-- carousel container -->
+      <div class="carousel_container">
+        <!-- slide_section -->
+        <div class="slide_section">
+          <div class="img_carousel">
+            <img src="./IMAGES/slide1.png" alt="Slide 1"/>
+            <img src="./IMAGES/slide2.png" alt="Slide 2"/>
+            <img src="./IMAGES/slide3.png" alt="Slide 3"/>
+            <img src="./IMAGES/slide4.png" alt="Slide 4"/>
+            <img src="./IMAGES/slide5.png" alt="Slide 5"/>
+            <img src="./IMAGES/slide6.png" alt="Slide 6"/>
+          </div>
+          <!-- end of slide_section -->
         </div>
-        <div class="row2">
-            <a href="">
-            <img src="Images/section2/Power.png" alt="">
-            Power
-        </a>
-        </div>
-        <div class="row2">
-            <a href="">
-            <img src="Images/section2/Health & Beauty.png" alt="">
-            Health & Beauty
-        </a>
-        </div>
-        <div class="row2">
-            <a href="">
-            <img src="Images/section2/Baby Products.png" alt="">
-            Baby Products
-        </a>
-        </div>
-        <div class="row2">
-            <a href="">
-            <img src="Images/section2/Home & Kitchen.png" alt="">
-            Home & Kitchen
-        </a>
-        </div>
-    </div>
-</div>
-    
-
-<div class="categories">
-<div class="wrapper-p">
-<div class="p">
-    <p>Phone Deals</p>
-</div>
-    <div class="section3">
-        <div class="row3">
-            <a href="">
-            <img src="Images/section3/Android.png" alt="">
-            Android
-        </a>
-        </div>
-        <div class="row3">
-            <a href="">
-            <img src="Images/section3/Android Tablets.png" alt="">
-           Android Tablets
-        </a>
-        </div>
-        <div class="row3">
-            <a href="">
-            <img src="Images/section3/Notes.png" alt="">
-            Notes
-        </a>
-        </div>
-        <div class="row3">
-            <a href="">
-            <img src="Images/section3/iPhone.png" alt="">
-           iPhone
-        </a>
-        </div>
-        <div class="row3">
-            <a href="">
-            <img src="Images/section3/iPads.png" alt="">
-            iPads
-        </a>
-        </div>
-        </div>
-    </div>
-</div>
-
-<div class="categories">
-<div class="wrapper-p1">
-        <div id="p"><p>Top Selling Items</p></div>
-        <div class="section4">
-            <div class="row4">
-                <a href="">
-                <img src="Images/section4/Men’s Casual Shirt & S...png" alt="">
-                <div>Men’s Casual Shirt & S..</div>
-                <div>N6,990.00</div>
-                </a>
+        <!-- blinking_container -->
+        <div class="blinking_container">
+          <div class="blinking_text">
+            <div class="first_text">
+              live now!
             </div>
-            <div class="row4">
-                <a href="">
-                <img src="Images/section4/Apple iPhone 13.png" alt="">
-                    <div>Apple iPhone 13 6.1" su..</div>
-                    <div>N562,999.00</div>
-                </a>
+            <div class="second_text">
+              shop with us
             </div>
-            <div class="row4">
-                <a href="">
-                <img src="Images/section4/Men's Plaid Long Slee....png" alt="">
-                    <div>Men's Plaid Long Slee...</div>
-                    <div>N7,113.00</div>
-                </a>
+          </div>
+          <!-- end of blinking_text -->
+          <!-- shop, refer & earn image -->
+          <div class="refer_earn">
+            <img src="./IMAGES/shop, refer & earn.png" alt="shop, refer & earn"/>
+          </div>
+        </div>
+        <!-- end of blinking_container -->
+      </div>
+      <!-- end of carousel container -->
+      <!-- Overall Product Container -->
+      <div class="product_Container">
+        <!-- First Product Container -->
+        <div class="product_header">
+          <div class="all_Products">
+            <div class="product_items">
+              <a href="">
+                <img src="./IMAGES/Phones & Tablets.png" alt="Phones and Tablets"/>
+                <h3>Phones & Tablets</h3>
+              </a>
             </div>
-            <div class="row4">
-                <a href="">
-                <img src="Images/section4/LG 32 LED TV (LP50.png" alt="">
-                    <div>LG 32 LED TV (LP50...</div>
-                    <div>N95,550.00</div>
-                </a>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Fashon.png" alt="A Woman"/>
+                <h3>Fashon</h3>
+              </a>
             </div>
-            <div class="row4">
-                <a href="">
-                <img src="Images/section4/Oraimo FreePods 4...png" alt="">
-                <div>Oraimo FreePods 4...</div>
-                <div>N21,500.00</div>
-                </a>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Groceries.png" alt="Groceries"/>
+                <h3>Groceries</h3>
+              </a>
             </div>
-        </div>
-</div>
-</div>
-
-    <class="categories">
-        <div class="wrapper-p2">
-        <div id="p3"><p>Shop From Our Collections</p></div>
-        <div class="section5">
-        <div class="row5">
-            <a href="">
-                <img src="Images/section5/Air Conditioners.png" alt="">
-                <div>Air Conditioners</div>
-            </a>
-        </div>
-        <div class="row5">
-            <a href="">
-            <img src="Images/section5/Cookers.png" alt="">
-            <div>Cookers</div>
-            </a>
-        </div>
-        <div class="row5">
-            <a href="">
-            <img src="Images/section5/Fans.png" alt="">
-            <div>Fans</div>
-            </a>
-        </div>
-        <div class="row5">
-            <a href="">
-                <img src="Images/section5/Microwaves.png" alt="">
-                <div>Microwaves</div>
-            </a>
-        </div>
-        <div class="row5">
-            <a href="">
-                <img src="Images/section5/Fridges.png" alt="">
-                <div>Fridges</div>
-            </a>
-        </div>
-        </div>
-    </div>
-
-<div class="categories">
-    <div class="wrapper-p3">
-        <div id="p4">
-            <p>More Collections</p>
-        </div>
-    <div class="section6">
-            <div class="row6">
-                <a href="">
-                    <img src="Images/section6/Women’s Fashion.png" alt="">
-                    <div>Women’s Fashion</div>
-                </a>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Fitness Accessories.png" alt="Fitness Accessories"/>
+                <h3>Fitness Accessories</h3>
+              </a>
             </div>
-            <div class="row6">
-                <a href="">
-                    <img src="Images/section6/Men’s Fashion.png" alt="">
-                    <div>Men’s Fashion</div>
-                </a>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Electronics.png" alt="Electronics"/>
+                <h3>Electronics</h3>
+              </a>
             </div>
-            <div class="row6">
-                <a href="">
-                    <img src="Images/section6/Kid’s Fashion.png" alt="">
-                    <div>Kid’s Fashion</div>
-                </a>
+          </div>
+          <div class="all_Products">
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Mobile Accessories.png" alt="Mobile Accessories"/>
+                <h3>Mobile Accessories</h3>
+              </a>
             </div>
-            <div class="row6">
-                <a href="">
-                    <img src="Images/section6/Wristwatches.png" alt="">
-                    <div>Wristwatches</div>
-                </a>
+            <div class="product_items">
+              <a href="">
+                <img src="IMAGES/Power .png" alt="Power Generator">
+                <h3>Power</h3>
+              </a>
             </div>
-            <div class="row6">
-                <a href="">
-                    <img src="Images/section6/Sneakers.png" alt="">
-                    <div>Sneakers</div>
-                </a>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Health & Beauty.png" alt="Health and Beauty Cream"/>
+                <h3>Health & Beauty</h3>
+              </a>
             </div>
-    </div> 
-</div>
-</div>
-
-<div class="categories">
-    <div class="wrapper-p4">
-    <div id="p5">
-        <p>More Deals</p>
-    </div>
-    <div class="section7">
-        <div class="row7">
-            <a href="">
-                <img src="Images/section7/Cameras.png" alt="">
-                <div>Cameras</div>
-            </a>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Baby Products.png" alt="Baby Products"/>
+                <h3>Baby Products</h3>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Home & Kitchen.png" alt="Blender"/>
+                <h3>Home & Kitchen</h3>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="row7">
-            <img src="Images/section7/Generators.png" alt="">
-            <div>Generators</div>
+        <!-- End of First Product Container -->
+        <!-- Second Product Container -->
+        <div class="product_header">
+          <h2>phone deals</h2>
+          <div class="all_Products">
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Android.png" alt="Smart Phones"/>
+                <h3>Android</h3>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Android Tablets.png" alt="Android Tablets"/>
+                <h3>Android Tablets</h3>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Notes.png" alt="Smart Phone"/>
+                <h3>Notes</h3>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/iPhone.png" alt="Smart Phone"/>
+                <h3>iPhone</h3>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/iPads.png" alt="Smart Phone"/>
+                <h3>iPads</h3>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="row7">
-            <img src="Images/section7/Drones.png" alt="">
-            <div>Drones</div>
+        <!-- End of Second Product Container -->
+        <!-- Third Product Container -->
+        <div class="product_header">
+          <h2>top selling items</h2>
+          <div class="all_Products">
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Men’s Casual Shirt & S...png" alt="Men’s Casual Shirt & Short"/>
+                <p>Men’s Casual Shirt & S..</p>
+                <h4>N6,990.00</h4>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/iPhone.png" alt="Apple phone"/>
+                <p>Apple iPhone 13 6.1" su..</p>
+                <h4>N562,999.00</h4>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Men's Plaid Long Slee....png" alt="Men's Plaid Long Sleeves"/>
+                <p>Men's Plaid Long Slee...</p>
+                <h4>N7,113.00</h4>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/LG 32 LED TV (LP50.png" alt="LG 32 LED TV"/>
+                <p>LG 32 LED TV (LP50...</p>
+                <h4>N7,113.00</h4>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Oraimo FreePods 4...png" alt="Oraimo FreePods"/>
+                <p>Oraimo FreePods 4...</p>
+                <h4>N21,500.00</h4>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="row7">
-            <img src="Images/section7/Home Audio.png" alt="">
-            <div>Home Audio</div>
+        <!-- End of Third Product Container -->
+        <!-- Fourth Product Container -->
+        <div class="product_header">
+          <h2>shop from our collections</h2>
+          <div class="all_Products">
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Air Conditioners.png" alt="Air Conditioner"/>
+                <h3>Air Conditioners</h3>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Cookers.png" alt="Gas Cooker"/>
+                <h3>Cookers</h3>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Fans.png" alt="Standing Fan"/>
+                <h3>Fans</h3>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Microwaves.png" alt="Microwave"/>
+                <h3>Microwaves</h3>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Fridges.png" alt="Fridges"/>
+                <h3>Fridges</h3>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="row7">
-            <img src="Images/section7/Inverters.png" alt="">
-            <!--<div>Inverters</div>-->
+        <!-- End of Fourth Product Container -->
+        <!-- Fifth Product Container -->
+        <div class="product_header">
+          <h2>more collections</h2>
+          <div class="all_Products">
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Fashon.png" alt="A Woman"/>
+                <h3>Women’s Fashion</h3>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Men’s Fashion.png" alt="A Man Sitting"/>
+                <h3>Men’s Fashion</h3>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Kid’s Fashion.png" alt="A Boy"/>
+                <h3>Kid’s Fashion</h3>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Wristwatches.png" alt="A Wristwatche"/>
+                <h3>Wristwatches</h3>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Sneakers.png" alt="A Sneakers"/>
+                <h3>Sneakers</h3>
+              </a>
+            </div>
+          </div>
         </div>
+        <!-- End of Fifth Product Container -->
+        <!-- Sixth Product Container -->
+        <div class="product_header">
+          <h2>more deals</h2>
+          <div class="all_Products">
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Cameras.png" alt="A Camera"/>
+                <h3>Cameras</h3>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Generators.png" alt="A Generator"/>
+                <h3>Generators</h3>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Drones.png" alt="A Drone"/>
+                <h3>Drones</h3>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Home Audio.png" alt="Home Theater"/>
+                <h3>Home Audio</h3>
+              </a>
+            </div>
+            <div class="product_items">
+              <a href="#">
+                <img src="./IMAGES/Inverters.png" alt="Inverter"/>
+                <h3>Inverters</h3>
+              </a>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-</div>
-</div>
-
-</body>
+        <!-- End of Sixth Product Container -->
+      </div>
+      <!-- End of Overall Product Container -->
+      <!-- footer -->
+      <footer>
+        <div class="footer_items">
+          <h1>about hivemart</h1>
+          <ul>
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+            <li>
+              <a href="#">Where to buy</a>
+            </li>
+            <li>
+              <a href="#">special offer</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_items">
+          <h1>need help?</h1>
+          <ul>
+            <li>
+              <a href="#">visit calcare</a>
+            </li>
+            <li>
+              <a href="#">Track your order</a>
+            </li>
+            <li>
+              <a href="#">Report a product</a>
+            </li>
+            <li>
+              <a href="#">Returns and refunds policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_items">
+          <h1>terms</h1>
+          <ul>
+            <li>
+              <a href="#">Warranty</a>
+            </li>
+            <li>
+              <a href="#">Orders & Shipping</a>
+            </li>
+            <li>
+              <a href="#">Privacy policy</a>
+            </li>
+            <li>
+              <a href="#">Terms & conditions</a>
+            </li>
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_items news">
+          <h1 class="newsletter">Newsletter</h1>
+          <span>Get the latest updates on our latest offers!</span>
+          <div class="email_subscribe">
+            <input type="email" class="subscribe" id="subscribe" placeholder="Enter your email address"/>
+            <label for="subscribe">
+              <button class="btn">subscribe</button>
+            </label>
+          </div>
+          <h2>Connect with us</h2>
+          <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </footer>
+      <!-- end of footer -->
+    </main>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
